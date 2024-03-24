@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Order form</title>
+</head>
+<body>
+    <h1> Smoothie Shop</h1>
+
+    <h2> Customize your Order</h2>
+
+    <form method="post">
+        <h3> (1) Large (2) Medium(3) Regular</h3>
+        <fieldset>
+            <h2> Please seelect your smoothie size here</h2>
+            <h3> (1)Large <img src="cup.png" alt="large" id ="large">  (1)Medium <img src="cup.png" alt="medium" id = "medium">  (1)Regular <img src="cup.png" alt="regular" id = "regular"></h3>
+
+        </fieldset>
+        <h3> Please select the following Ingredients</h3>
+        <fieldset>
+            <label for="Ingredients">
+                Cucumbers<input type="checkbox" name="cucumbers" id="cucumbers"> 
+                Beetroot<input type="checkbox" name="beetroot" id="beetroot">
+                Spinich<input type="checkbox" name="spinich" id="spinich">
+                Carrot<input type="checkbox" name="carrot" id="carrot">
+            </label>
+        </fieldset>
+        <h3> Add a cookie!</h3>
+        <fieldset>
+            <label for="cookie">
+                Yes<input type="radio">
+                No <input type="radio">
+            </label>
+        </fieldset>
+        <br>
+        <br>
+        <button type="submit">submit</button>
+    </form>
+
+    <h2> Your order is:</h2>
+    <p id="output"></p>
+</body>
+</html>
