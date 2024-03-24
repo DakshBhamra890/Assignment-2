@@ -12,14 +12,26 @@
 
     <h2> Customize your Order</h2>
 
+    <!-- a form with the method post and id smoothieform is created-->
     <form method="post" id = smoothieform>
+        <!-- cup sizes along with their images are given here for user to select-->
         <h3> (1) Large (2) Medium(3) Regular</h3>
         <fieldset>
-            <h2> Please seelect your smoothie size here</h2>
-            <h3> (1)Large <img src="cup.png" alt="large" id ="large">  (1)Medium <img src="cup.png" alt="medium" id = "medium">  (1)Regular <img src="cup.png" alt="regular" id = "regular"></h3>
+            <h2> Please select your smoothie size here</h2>
+            <div id="container1">
+                <h3 class ="cups"> (1)Large </h3>
+                <h3 class ="cups"> (2)Medium</h3>
+                <h3 class ="cups"> (3)Regular </h3>
+            </div>
+            <div id="container2">
+                <img src="cup.png" alt="large" id ="large" class="cups">
+                <img src="cup.png" alt="medium" id = "medium" class="cups">
+                <img src="cup.png" alt="regular" id = "regular" class="cups">
+            </div>
 
         </fieldset>
-        <h3> Please select the following Ingredients</h3>
+        <!-- ingredients as images are provided for better usability-->
+        <h2> Please select the following Ingredients</h2>
         <fieldset>
             <label for="Ingredients">
                 <img src="cucumber.jpg" alt="cucumber" id ="cucumber" class="Ingredients">;
@@ -28,7 +40,9 @@
                 <img src="spinich.jpg" alt="spinich" id="spinich" class="Ingredients">;
             </label>
         </fieldset>
-        <h3> Add a cookie!</h3>
+
+        <!-- As an extra feature the website ask the user in the form of a radio button to add or not to add a cookie -->
+        <h2> Add a cookie!</h2>
         <fieldset>
             <label for="cookie">
                 Yes<input type="radio" name="cookie" value="yes">
@@ -39,7 +53,7 @@
         <br>
         <button type="submit">submit</button>
     </form>
-
+<!-- Output will be generated-->
     <h2> Your order is:</h2>
     <p id="output"></p>
 </body>

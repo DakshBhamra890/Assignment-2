@@ -1,3 +1,4 @@
+/* cup size as images is defined here*/
 
 #large{
     height: 200px;
@@ -8,7 +9,57 @@
 #regular{
     height: 100px;
 }
+/* size for ingredient images is defined here*/
 .Ingredients{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
+    margin-left: 10%;
+}
+/* font size for various headings is defined here*/
+h1{
+    font-size: 300%;
+    margin-left: 40%;
+
+}
+h2{
+    font-size: 200%;
+    margin-left: 40%;
+}
+h3{
+    font-size: 150%;
+    margin-left: 45%;
+}
+body{
+    background-color:honeydew;
+}
+
+.cups{
+    font-size: 150%;
+    margin: 0;
+    padding-left: 20%;
+
+}
+#container1{
+    display: flex;
+}
+
+img[class="cups"]:target{
+    border:  dotted purple 10px;
+}
+/* various other aspects are defined here*/
+input[name="cookie"]{
+    font-size: 300%;
+    margin-right: 15%;
+
+}
+button{
+    font-size: 200%;
+    color:white;
+    background-color: coral;
+    margin-left: 45%;
+}
+p{
+    font-size: 250%;
+    font-weight: bold;
+    color: darkblue;
 }
