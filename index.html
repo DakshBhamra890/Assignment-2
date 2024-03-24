@@ -12,7 +12,7 @@
 
     <h2> Customize your Order</h2>
 
-    <form method="post">
+    <form method="post" id = smoothieform>
         <h3> (1) Large (2) Medium(3) Regular</h3>
         <fieldset>
             <h2> Please seelect your smoothie size here</h2>
@@ -22,17 +22,17 @@
         <h3> Please select the following Ingredients</h3>
         <fieldset>
             <label for="Ingredients">
-                Cucumbers<input type="checkbox" name="cucumbers" id="cucumbers"> 
-                Beetroot<input type="checkbox" name="beetroot" id="beetroot">
-                Spinich<input type="checkbox" name="spinich" id="spinich">
-                Carrot<input type="checkbox" name="carrot" id="carrot">
+                <img src="cucumber.jpg" alt="cucumber" id ="cucumber" class="Ingredients">;
+                <img src="beetroot.jpg" alt="beetroot" id="beetroot" class="Ingredients">;
+                <img src="carrot.jpg" alt="carrot" id="carrot" class="Ingredients">;
+                <img src="spinich.jpg" alt="spinich" id="spinich" class="Ingredients">;
             </label>
         </fieldset>
         <h3> Add a cookie!</h3>
         <fieldset>
             <label for="cookie">
-                Yes<input type="radio">
-                No <input type="radio">
+                Yes<input type="radio" name="cookie" value="yes">
+                No <input type="radio" name="cookie" value = "no">
             </label>
         </fieldset>
         <br>
